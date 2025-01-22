@@ -46,6 +46,8 @@ Drag-based image editing using generative models provides precise control over i
 
 
 # 🎖 Partial Honors and Awards
+- **2024.1** 
+Ranked 6th globally in Task 1 and 3rd globally in Task 2 of the EEG-Music Emotion Recognition challenge at ICASSP 2024 Grand Challenge.
 - **2024.12**  First Prize at the 9th National Youth Artificial Intelligence Innovation and Entrepreneurship Conference, Ranked 1st.
 - **2024.07**  National Undergraduate Information Security Competition, Third Prize in the Northeast Region, Ranked 1st.
 - **2024.05**  American Undergraduate Mathematical Contest in Modeling, Honorable Mention, Ranked 1st.
