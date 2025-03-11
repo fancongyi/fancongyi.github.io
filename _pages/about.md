@@ -53,7 +53,7 @@ Drag-based image editing using generative models provides precise control over i
 <span style="color:#224b8d">**Congyi Fan**</span>, Jian Guan, Xuanjia Zhao, Dongli Xu, Youtian Lin, Tong Ye, Haiwei Pan, Pengming Feng
 
 In this paper, we propose Danceba, a novel framework that leverages gating mechanism to enhance rhythm-aware feature representation for music-driven dance generation, which achieves highly aligned dance poses with enhanced rhythmic sensitivity.
-s
+
 [**Project**](https://fastdrag-site.github.io/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
 </div>
