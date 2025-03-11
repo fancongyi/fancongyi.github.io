@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Knowledge, Comprehension, Future.
+Knowledge, Comprehension and Future.
 
 <!--
 
