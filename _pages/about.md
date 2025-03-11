@@ -37,7 +37,7 @@ Knowledge, Comprehension and Future.
 
 [FastDrag: Manipulate Anything in One Step](https://arxiv.org/pdf/2405.15769)
 
-Xuanjia Zhao, Jian Guan, <span style="color:blue">**Congyi Fan**</span>, Dongli Xu, Youtian Lin, Haiwei Pan, Pengming Feng
+Xuanjia Zhao, Jian Guan, <span style="color:#224b8d">**Congyi Fan**</span>, Dongli Xu, Youtian Lin, Haiwei Pan, Pengming Feng
 
 Drag-based image editing using generative models provides precise control over image contents, enabling users to manipulate anything in an image with a few clicks.
 
