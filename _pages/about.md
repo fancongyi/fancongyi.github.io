@@ -22,6 +22,7 @@ Knowledge, Comprehension and Future.
 
 
 # 🔥 News
+- **2025.03**: &nbsp;🎉🎉 New paper released! Align Your Rhythm: Generating Highly Aligned Dance Poses with Gating-Enhanced Rhythm-Aware Feature Representation.
 - **2024.12**: &nbsp;🎉🎉 Awarded First Prize at the 9th National Youth Artificial Intelligence Innovation and Entrepreneurship Conference.
 - **2024.11**: &nbsp;🎉🎉 FastDrag was successfully selected as an Outstanding Achievement in the First Academic Annual Conference of Harbin Engineering University.
 - **2024.09**: &nbsp;🎉🎉 I have received a letter of appreciation from the Heilongjiang Provincial Department of Education.
@@ -44,22 +45,22 @@ Drag-based image editing using generative models provides precise control over i
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/fastdrag图.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/fastdrag图.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[FastDrag: Manipulate Anything in One Step](https://arxiv.org/pdf/2405.15769)
+[Align Your Rhythm: Generating Highly Aligned Dance Poses with Gating-Enhanced Rhythm-Aware Feature Representation](https://arxiv.org/pdf/2405.15769)
 
-Xuanjia Zhao, Jian Guan, **Congyi Fan**, Dongli Xu, Youtian Lin, Haiwei Pan, Pengming Feng
+**Congyi Fan**, Jian Guan, Xuanjia Zhao, Dongli Xu, Youtian Lin, Tong Ye, Haiwei Pan, Pengming Feng
 
-Drag-based image editing using generative models provides precise control over image contents, enabling users to manipulate anything in an image with a few clicks.
-
+In this paper, we propose Danceba, a novel framework that leverages gating mechanism to enhance rhythm-aware feature representation for music-driven dance generation, which achieves highly aligned dance poses with enhanced rhythmic sensitivity.
+s
 [**Project**](https://fastdrag-site.github.io/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
 </div>
 
 # 🎖 Partial Honors and Awards
 - **2024.1** 
-Ranked 6th globally in Task 1 and 3rd globally in Task 2 of the EEG-Music Emotion Recognition challenge at ICASSP 2024 Grand Challenge.
+Ranked 7th globally in Task 1 and 4th globally in Task 2 of the EEG-Music Emotion Recognition challenge at ICASSP 2024 Grand Challenge.
 - **2024.12**  First Prize at the 9th National Youth Artificial Intelligence Innovation and Entrepreneurship Conference, Ranked 1st.
 - **2024.07**  National Undergraduate Information Security Competition, Third Prize in the Northeast Region, Ranked 1st.
 - **2024.05**  American Undergraduate Mathematical Contest in Modeling, Honorable Mention, Ranked 1st.
