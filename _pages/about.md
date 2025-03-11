@@ -19,7 +19,7 @@ redirect_from:
 
 Knowledge, Comprehension and Future.
 
-<!--
+
 
 # 🔥 News
 - **2024.12**: &nbsp;🎉🎉 Awarded First Prize at the 9th National Youth Artificial Intelligence Innovation and Entrepreneurship Conference.
@@ -84,5 +84,6 @@ Ranked 6th globally in Task 1 and 3rd globally in Task 2 of the EEG-Music Emotio
 - **2023.10 - now**  League secretary of the first class of information security of Harbin Engineering University, class of 2022.
 - **2023.12 - 2023.06**  Harbin Engineering University 2022 class study committee member of the first class of computer science.
 
+<!--
 
 -->
