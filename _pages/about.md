@@ -50,7 +50,7 @@ Drag-based image editing using generative models provides precise control over i
 
 [Align Your Rhythm: Generating Highly Aligned Dance Poses with Gating-Enhanced Rhythm-Aware Feature Representation](https://arxiv.org/pdf/2405.15769)
 
-<span style="color:blue">**Congyi Fan**</span>, Jian Guan, Xuanjia Zhao, Dongli Xu, Youtian Lin, Tong Ye, Haiwei Pan, Pengming Feng
+<span style="color:#224b8d">**Congyi Fan**</span>, Jian Guan, Xuanjia Zhao, Dongli Xu, Youtian Lin, Tong Ye, Haiwei Pan, Pengming Feng
 
 In this paper, we propose Danceba, a novel framework that leverages gating mechanism to enhance rhythm-aware feature representation for music-driven dance generation, which achieves highly aligned dance poses with enhanced rhythmic sensitivity.
 s
