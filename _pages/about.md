@@ -60,7 +60,7 @@ In this paper, we propose Danceba, a novel framework that leverages gating mecha
 </div>
 </div>
 
-# 🎖 Partial Honors and Awards
+# 🎖 Honors and Awards
 - **2024.1** 
 Ranked 7th globally in Task 1 and 4th globally in Task 2 of the EEG-Music Emotion Recognition challenge at ICASSP 2024 Grand Challenge.
 - **2024.12**  First Prize at the 9th National Youth Artificial Intelligence Innovation and Entrepreneurship Conference, Ranked 1st.
