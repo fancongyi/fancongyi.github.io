@@ -19,14 +19,16 @@ redirect_from:
 
 Knowledge, Comprehension and Future.
 
-<!--
+
 
 # 🔥 News
+- **2025.04**: &nbsp;🎉🎉 Selected as a Pioneer in Innovation and Entrepreneurship (Top 0.03%).
+- **2025.04**: &nbsp;🎉🎉 Received Outstanding Final Report Award for the National Undergraduate Training Program for Innovation and Entrepreneurship.
 - **2025.03**: &nbsp;🎉🎉 New paper released! Align Your Rhythm: Generating Highly Aligned Dance Poses with Gating-Enhanced Rhythm-Aware Feature Representation.
 - **2024.12**: &nbsp;🎉🎉 Awarded First Prize at the 9th National Youth Artificial Intelligence Innovation and Entrepreneurship Conference.
 - **2024.11**: &nbsp;🎉🎉 FastDrag was successfully selected as an Outstanding Achievement in the First Academic Annual Conference of Harbin Engineering University.
 - **2024.09**: &nbsp;🎉🎉 I have received a letter of appreciation from the Heilongjiang Provincial Department of Education.
-- **2024.07**: &nbsp;🎉🎉 As the project leader, successfully led the application for the **National Undergraduate Training Program for Innovation and Entrepreneurship**, ranked in the top 4.16%, and recognized as a nationally prioritized project. 
+- **2024.07**: &nbsp;🎉🎉 As the project leader, successfully led the application for the National Undergraduate Training Program for Innovation and Entrepreneurship (Top 4.16%). 
 - **2023.09**: &nbsp;🎉🎉 Participated in the 2023 Forum on Technological Innovation for the Maritime Power Strategy.
 - **2023.08**: &nbsp;🎉🎉 Participated in the 18th National Conference on Computer-Supported Cooperative Work and Social Computing.
 
@@ -86,5 +88,6 @@ Ranked 7th globally in Task 1 and 4th globally in Task 2 of the EEG-Music Emotio
 - **2023.12 - 2023.06**  Harbin Engineering University 2022 class study committee member of the first class of computer science.
 
 
+<!--
 
 -->
