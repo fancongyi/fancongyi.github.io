@@ -34,7 +34,7 @@ Knowledge, Comprehension and Future.
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/fastdrag图.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/danceba.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [FastDrag: Manipulate Anything in One Step](https://arxiv.org/pdf/2405.15769)
