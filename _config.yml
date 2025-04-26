@@ -7,9 +7,7 @@
 
 # Site Settings
 title                    : "Congyi Fan"
-description              : "Computer Vision, 
-MultiModal, 
-Audio"
+# description              : "Computer Vision, MultiModal, Audio"
 repository               : "fancongyi/fancongyi.github.io"
 google_scholar_stats_use_cdn : true
 
