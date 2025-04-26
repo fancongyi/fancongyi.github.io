@@ -79,7 +79,7 @@ Ranked 7th globally in Task 1 and 4th globally in Task 2 of the EEG-Music Emotio
 # 💻 Internships
 - **2024.07 - 2024.11**  Guangdong Key Laboratory of New Security and Intelligence Technology, HITSZ.
 
-# 🏫 Partial Student Work
+# 🏫 Student Works
 - **2024.12 - now**  Secretary of the Undergraduate Party Branch, National Academy of State Secrets.
 - **2023.07 - now**  President of Harbin Engineering University Network Security Technology Society.
 - **2023.09 - now**  Deputy Director of the Party Building Center of the College of Computer Science and Technology.
