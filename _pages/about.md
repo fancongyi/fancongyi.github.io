@@ -19,7 +19,7 @@ redirect_from:
 
 Knowledge, Comprehension and Future.
 
-
+<!--
 
 # 🔥 News
 - **2025.04**: &nbsp;🎉🎉 Selected as a Pioneer in Innovation and Entrepreneurship (Top 0.03%).
@@ -88,6 +88,6 @@ Ranked 7th globally in Task 1 and 4th globally in Task 2 of the EEG-Music Emotio
 - **2023.12 - 2023.06**  Harbin Engineering University 2022 class study committee member of the first class of computer science.
 
 
-<!--
+
 
 -->
