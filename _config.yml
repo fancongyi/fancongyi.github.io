@@ -8,8 +8,8 @@
 # Site Settings
 title                    : "Congyi Fan"
 description              : "Computer Vision, 
-MultiModal Generation, 
-Artificial Intelligence Generative Content"
+MultiModal, 
+Audio"
 repository               : "fancongyi/fancongyi.github.io"
 google_scholar_stats_use_cdn : true
 
