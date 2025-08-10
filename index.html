@@ -53,7 +53,8 @@
     h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
     h3 { font-size: 1.15rem; color: #0f172a; /* slate-900 */ }
 
-    p { margin: 0.45em 0; }
+    /* Paragraphs: tighter in-paragraph line height, keep inter-paragraph margin */
+    p { margin: 0.45em 0; line-height: 1.35; }
     .muted { color: var(--muted); }
 
     a {
@@ -92,7 +93,8 @@
     .imgtable { width: 100%; border-spacing: 0; border-collapse: collapse; }
     .imgtable td { vertical-align: middle; padding: 0; }
     .avatar { border-radius: 12px; box-shadow: 0 3px 12px rgba(0,0,0,.12); width: 140px; height: 140px; display: block; }
-    .intro { padding-left: clamp(2px, 0.8vw, 6px); }
+    /* Max horizontal gap between avatar and intro text = 2px */
+    .intro { padding-left: clamp(0px, 0.6vw, 2px); }
     .intro p { margin: 1px 0; }
 
     /* Lists spacing (publications/news/etc.) */
@@ -118,7 +120,16 @@
     .authors i { font-style: normal; }
     .me { font-weight: 800; color: var(--primary); }
     .venue { font-style: italic; }
-    .links a { margin-right: 10px; }
+    /* Remove extra space after link text inside [brackets] */
+    /* (We intentionally do not add margins to .links a to avoid a gap before ']' ) */
+
+    /* Publications scroller: only scroll when > 8 items */
+    .pubs-container { margin: 14px 0; padding: 8px 14px; border: 1px solid var(--border); border-radius: 12px; background: #fbfbfd; max-height: none; overflow: visible; }
+    .pubs-container:has(.pubs li:nth-of-type(9)) { max-height: 360px; overflow-y: auto; }
+    .pubs-container::-webkit-scrollbar { width: 6px; }
+    .pubs-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 3px; }
+    .pubs-container::-webkit-scrollbar-thumb { background: #888; border-radius: 3px; }
+    .pubs-container::-webkit-scrollbar-thumb:hover { background: #555; }
 
     /* Subtle footer note */
     .footnote { font-size: 0.92rem; color: var(--muted); }
@@ -130,7 +141,8 @@
       #layout-menu > div { position: static; }
       #layout-content { padding: 20px 16px; }
       .avatar { width: 120px; height: 120px; }
-      .intro { padding-left: clamp(2px, 1vw, 4px); }
+      /* Max gap on mobile = 2px as well */
+      .intro { padding-left: clamp(0px, 1vw, 2px); }
     }
 
     /* Dark mode (auto) */
@@ -151,6 +163,7 @@
       .menu-item a:hover { background: #0d1b2a; border-color: #1b2b44; }
       .news-container { background: #0d1320; }
       .news-container h3 { background: #0d1320; }
+      .pubs-container { background: #0d1320; }
     }
   </style>
 </head>
@@ -216,7 +229,7 @@
 
         <div class="section news-container">
           <h3>NEWS</h3>
-          <ul>
+          <ul style="line-height:1.35">
             <li><p>[2025.05] One paper was accepted by ICCV 2025. [<a href="https://news.hrbeu.edu.cn/info/1015/86542.htm">News</a>]</p></li>
             <li><p>[2025.04] Selected as a Pioneer in Innovation and Entrepreneurship (Top 0.03%). [<a href="https://qihang.hrbeu.edu.cn/2024/0427/c960a324682/page.htm">News</a>]</p></li>
             <li><p>[2025.04] Received Outstanding Final Report Award for the National Undergraduate Training Program for Innovation and Entrepreneurship.</p></li>
@@ -236,28 +249,30 @@
           <h3>Selected Publications</h3>
           <p>Thanks to all the collaborators for their great work! Check out <strong><a href="https://scholar.google.com/citations?user=bBNwgX8AAAAJ">Google Scholar</a></strong> for more.</p>
 
-          <ul class="pubs">
-            <li>
-              <p class="authors"><i><span class="me">Congyi Fan</span>, Jian Guan, Xuanjia Zhao, Dongli Xu, Youtian Lin, Tong Ye, Haiwei Pan, Pengming Feng.</i></p>
-              <p class="pub-title">Align Your Rhythm: Generating Highly Aligned Dance Poses with Gating-Enhanced Rhythm-Aware Feature Representation.</p>
-              <p class="venue">In <i>IEEE/CVF International Conference on Computer Vision (ICCV), 2025.</i></p>
-              <p class="links">[<a href="https://arxiv.org/abs/2503.17340">arXiv</a>] [<a href="https://danceba.github.io/">Demo</a>] [<a href="https://github.com/fancongyi/Danceba">Code</a>]</p>
-            </li>
+          <div class="pubs-container">
+            <ul class="pubs">
+              <li>
+                <p class="authors"><i><span class="me">Congyi Fan</span>, Jian Guan, Xuanjia Zhao, Dongli Xu, Youtian Lin, Tong Ye, Haiwei Pan, Pengming Feng.</i></p>
+                <p class="pub-title">Align Your Rhythm: Generating Highly Aligned Dance Poses with Gating-Enhanced Rhythm-Aware Feature Representation.</p>
+                <p class="venue">In <i>IEEE/CVF International Conference on Computer Vision (ICCV), 2025.</i></p>
+                <p class="links">[<a href="https://arxiv.org/abs/2503.17340">arXiv</a>][<a href="https://danceba.github.io/">Demo</a>][<a href="https://github.com/fancongyi/Danceba">Code</a>]</p>
+              </li>
 
-            <li>
-              <p class="authors"><i>Xuanjia Zhao, Jian Guan, <span class="me">Congyi Fan</span>, Dongli Xu, Youtian Lin, Haiwei Pan, Pengming Feng.</i></p>
-              <p class="pub-title">FastDrag: Manipulate Anything in One Step.</p>
-              <p class="venue">In <i>Annual Conference on Neural Information Processing Systems (NeurIPS), 2024.</i></p>
-              <p class="links">[<a href="https://arxiv.org/abs/2405.15769">arXiv</a>] [<a href="https://fastdrag-site.github.io/">Demo</a>] [<a href="https://github.com/XuanjiaZ/FastDrag">Code</a>]</p>
-            </li>
+              <li>
+                <p class="authors"><i>Xuanjia Zhao, Jian Guan, <span class="me">Congyi Fan</span>, Dongli Xu, Youtian Lin, Haiwei Pan, Pengming Feng.</i></p>
+                <p class="pub-title">FastDrag: Manipulate Anything in One Step.</p>
+                <p class="venue">In <i>Annual Conference on Neural Information Processing Systems (NeurIPS), 2024.</i></p>
+                <p class="links">[<a href="https://arxiv.org/abs/2405.15769">arXiv</a>][<a href="https://fastdrag-site.github.io/">Demo</a>][<a href="https://github.com/XuanjiaZ/FastDrag">Code</a>]</p>
+              </li>
 
-            <li>
-              <p class="authors"><i><span class="me">Congyi Fan*</span>, Shitong Fan*, Feiyang Xiao, Wenbo Wang, Xinyi Che, Qiaoxi Zhu, Jian Guan.</i></p>
-              <p class="pub-title">GISP@HEU's Submission to the DCASE 2025 Challenge: Stereo SELD Task.</p>
-              <p class="venue">In <i>DCASE 2025 Technical Report.</i></p>
-              <p class="links">[<a href="https://dcase.community/documents/challenge2025/technical_reports/DCASE2025_Guan_77_t3.pdf">Paper</a>]</p>
-            </li>
-          </ul>
+              <li>
+                <p class="authors"><i><span class="me">Congyi Fan*</span>, Shitong Fan*, Feiyang Xiao, Wenbo Wang, Xinyi Che, Qiaoxi Zhu, Jian Guan.</i></p>
+                <p class="pub-title">GISP@HEU's Submission to the DCASE 2025 Challenge: Stereo SELD Task.</p>
+                <p class="venue">In <i>DCASE 2025 Technical Report.</i></p>
+                <p class="links">[<a href="https://dcase.community/documents/challenge2025/technical_reports/DCASE2025_Guan_77_t3.pdf">Paper</a>]</p>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="section">
