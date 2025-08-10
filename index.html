@@ -1,3 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Congyi Fan (范聪毅)</title>
+
+  <!--
+    Clean, modern overrides for jemdoc.
+    Goals: 简洁、对齐、留白舒服、移动端可读、左右分栏更清晰。
+    保持 XHTML 1.1 兼容，不引入外部库/字体。
+  -->
+  <style type="text/css">
+    /* ---------- CSS Variables (safe in XHTML) ---------- */
+    :root {
+      --bg: #ffffff;
+      --card: #ffffff;
+      --text: #111827; /* gray-900 */
+      --muted: #6b7280; /* gray-500 */
+      --border: #e5e7eb; /* gray-200 */
+      --menu-bg: #f8fafc; /* gray-50 */
+      --menu-text: #374151; /* gray-700 */
+      --primary: #224b8d;
+      --primary-hover: #3069C6;
+      --highlight: #e8f0fe; /* subtle selection bg */
+    }
+
+    /* ---------- Base Typography ---------- */
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans CJK SC", "PingFang SC",
+        "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text);
+      margin: 0.6em 0 0.4em 0;
+      line-height: 1.25;
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+    h3 { font-size: 1.15rem; color: #0f172a; /* slate-900 */ }
+
+    p { margin: 0.45em 0; }
+    .muted { color: var(--muted); }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(34,75,141,0.25);
+    }
+    a:hover { color: var(--primary-hover); border-bottom-color: rgba(48,105,198,0.45); }
+    a:visited { color: var(--primary); }
+
+    /* ---------- Layout (keep jemdoc table but make it feel modern) ---------- */
+    #tlayout { margin: 0 auto; max-width: 1100px; border-collapse: collapse; width: 100%; }
+    #layout-menu { width: 200px; background: var(--menu-bg); border-right: 1px solid var(--border); }
+    #layout-content { background: var(--card); padding: 28px 32px; }
+
+    /* Make the left menu sticky on desktop */
+    #layout-menu > div { position: sticky; top: 16px; }
+
+    /* Menu styles */
+    .menu-category {
+      font-weight: 700; color: var(--menu-text); text-transform: uppercase;
+      letter-spacing: .06em; font-size: 0.8rem; padding: 18px 16px 8px 16px;
+    }
+    .menu-item { padding: 6px 16px; }
+    .menu-item a {
+      display: block; padding: 8px 10px; border-radius: 10px;
+      border: 1px solid transparent; background: transparent;
+    }
+    .menu-item a:hover { background: #eef2ff; border-color: #e0e7ff; }
+    .menu-item a.current { background: #e0ecff; border-color: #c7dbff; font-weight: 600; }
+
+    /* Top title area */
+    #toptitle h1 { margin-top: 0; font-size: 2.15rem; }
+
+    /* Header block: avatar + info */
+    .imgtable { width: 100%; border-spacing: 0; }
+    .imgtable td { vertical-align: middle; padding: 0; }
+    .avatar { border-radius: 12px; box-shadow: 0 3px 12px rgba(0,0,0,.12); width: 140px; height: 140px; display: block; }
+    .intro { padding-left: 18px; }
+    .intro p { margin: 2px 0; }
+
+    /* Lists spacing (publications/news/etc.) */
+    ul { margin: 0.4em 0 0.6em 1.2em; padding: 0; }
+    li { margin: 0.35em 0; }
+    li p { margin: 0.15em 0; }
+
+    /* Section cards (optional soft grouping) */
+    .section { margin: 18px 0 22px 0; }
+
+    /* News scroller */
+    .news-container {
+      max-height: 360px; overflow-y: auto; padding: 8px 14px; margin: 14px 0;
+      border: 1px solid var(--border); border-radius: 12px; background: #fbfbfd;
+    }
+    .news-container h3 { position: sticky; top: -8px; background: #fbfbfd; margin: 8px 0 6px 0; padding: 8px 0; z-index: 1; }
+    .news-container ul { margin-left: 1em; padding-bottom: 8px; }
+
+    /* Publications */
+    .pubs { list-style: none; margin-left: 0; }
+    .pubs li { padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 10px; background: var(--card); }
+    .pub-title { font-weight: 700; }
+    .authors i { font-style: normal; }
+    .me { font-weight: 800; color: var(--primary); }
+    .venue { font-style: italic; }
+    .links a { margin-right: 10px; }
+
+    /* Subtle footer note */
+    .footnote { font-size: 0.92rem; color: var(--muted); }
+
+    /* Mobile: stack columns */
+    @media (max-width: 880px) {
+      #tlayout, #tlayout tr, #tlayout td { display: block; width: 100%; }
+      #layout-menu { width: auto; border-right: none; border-bottom: 1px solid var(--border); }
+      #layout-menu > div { position: static; }
+      #layout-content { padding: 20px 16px; }
+      .avatar { width: 120px; height: 120px; }
+      .intro { padding-left: 12px; }
+    }
+
+    /* Dark mode (auto) */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f1a;
+        --card: #0e1422;
+        --text: #e5e7eb;
+        --muted: #9aa3b2;
+        --border: #1f2937;
+        --menu-bg: #0e1422;
+        --menu-text: #cbd5e1;
+        --primary: #86b7ff;
+        --primary-hover: #a5c7ff;
+        --highlight: #172554;
+      }
+      .menu-item a.current { background: #0f1a2e; border-color: #1d2a44; }
+      .menu-item a:hover { background: #0d1b2a; border-color: #1b2b44; }
+      .news-container { background: #0d1320; }
+      .news-container h3 { background: #0d1320; }
+    }
+  </style>
+</head>
+
+<body>
+  <table summary="Table for page layout." id="tlayout">
+    <tr valign="top">
+      <td id="layout-menu">
+        <div>
+          <div class="menu-category">Menu</div>
+          <div class="menu-item"><a href="index.html" class="current">Home</a></div>
+          <div class="menu-item"><a href="https://scholar.google.com/citations?user=bBNwgX8AAAAJ">Scholar</a></div>
+          <div class="menu-item"><a href="https://github.com/fancongyi">GitHub</a></div>
+          <!-- <div class="menu-item"><a href="https://www.linkedin.com/in/ziyang-ma">LinkedIn</a></div> -->
+          <!-- <div class="menu-item"><a href="https://blog.csdn.net/weixin_45019478">Blog</a></div> -->
+        </div>
+      </td>
+
+      <td id="layout-content">
+        <div id="toptitle">
+          <h1>Congyi Fan (范聪毅)</h1>
+        </div>
+
+        <table class="imgtable">
+          <tr>
+            <td>
+              <a href="index.html">
+                <img src="profile.png" alt="Congyi Fan" class="avatar" />
+              </a>
+            </td>
+            <td class="intro" align="left">
+              <p>Undergraduate Student<br />
+                Harbin Engineering University, China<br />
+                Harbin, Heilongjiang Province</p>
+              <p><a href="mailto:fancongyi@hrbeu.edu.cn">fancongyi@hrbeu.edu.cn</a></p>
+            </td>
+          </tr>
+        </table>
+
+        <div class="section">
+          <h2>Biography</h2>
+          <p>Hi 👋 nice to meet you!</p>
+          <p>Currently I am an undergraduate student majoring in Computer Science and Technology (Information Security) at Harbin Engineering University (HEU), serving as a research assistant to Associate Professor <a href="https://scholar.google.com/citations?user=wf60G1sAAAAJ">Jian Guan</a>.</p>
+          <p>My research is jointly supervised by Associate Professor Jian Guan at HEU, Researcher <a href="https://scholar.google.com/citations?user=O51mMKgAAAAJ">Pengming Feng</a> from the State Key Laboratory of Space-Ground Integrated Information Technology (SGIIT), and Dr. <a href="https://scholar.google.com/citations?user=H56DRXwAAAAJ">Qiaoxi Zhu</a> from the University of Technology Sydney.</p>
+          <p>My research is guided by the aspiration to advance scientific and technological progress. My recent work focuses on <strong>Generative Models, 3D Vision, and Multimodal</strong>. If you are also interested, please feel free to contact me.</p>
+        </div>
+
+        <div class="section">
+          <h3>Education</h3>
+          <ul>
+            <li><p>B.E., Information Security, Harbin Engineering University, 2022.09–Now</p></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Interests</h3>
+          <ul>
+            <li><p>Generative Models</p></li>
+            <li><p>3D Vision</p></li>
+            <li><p>Multimodal</p></li>
+          </ul>
+        </div>
+
+        <div class="section news-container">
+          <h3>NEWS</h3>
+          <ul>
+            <li><p>[2025.05] One paper was accepted by ICCV 2025. [<a href="https://news.hrbeu.edu.cn/info/1015/86542.htm">News</a>]</p></li>
+            <li><p>[2025.04] Selected as a Pioneer in Innovation and Entrepreneurship (Top 0.03%). [<a href="https://qihang.hrbeu.edu.cn/2024/0427/c960a324682/page.htm">News</a>]</p></li>
+            <li><p>[2025.04] Received Outstanding Final Report Award for the National Undergraduate Training Program for Innovation and Entrepreneurship.</p></li>
+            <li><p>[2025.03] New paper released! Align Your Rhythm: Generating Highly Aligned Dance Poses with Gating-Enhanced Rhythm-Aware Feature Representation.</p></li>
+            <li><p>[2024.12] Awarded First Prize at the 9th National Youth Artificial Intelligence Innovation and Entrepreneurship Conference.</p></li>
+            <li><p>[2024.11] FastDrag was selected as an Outstanding Achievement in the First Academic Annual Conference of Harbin Engineering University. [<a href="https://cstc.hrbeu.edu.cn/2024/1105/c3687a331657/page.htm">News</a>]</p></li>
+            <li><p>[2024.09] One paper was accepted by NeurIPS 2024. [<a href="https://cstc.hrbeu.edu.cn/2024/0929/c3687a330582/page.htm">News</a>]</p></li>
+            <li><p>[2024.09] Received a letter of appreciation from the Heilongjiang Provincial Department of Education.</p></li>
+            <li><p>[2024.07] As the project leader, successfully led the application for the 2024 National Undergraduate Training Program for Innovation and Entrepreneurship (Top 4.16%).</p></li>
+            <li><p>[2023.09] Participated in the 2023 Forum on Technological Innovation for the Maritime Power Strategy.</p></li>
+            <li><p>[2023.08] Participated in the 18th National Conference on Computer-Supported Cooperative Work and Social Computing.</p></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Research</h2>
+          <h3>Selected Publications</h3>
+          <p>Thanks to all the collaborators for their great work! Check out <strong><a href="https://scholar.google.com/citations?user=bBNwgX8AAAAJ">Google Scholar</a></strong> for more.</p>
+
+          <ul class="pubs">
+            <li>
+              <p class="authors"><i><span class="me">Congyi Fan</span>, Jian Guan, Xuanjia Zhao, Dongli Xu, Youtian Lin, Tong Ye, Haiwei Pan, Pengming Feng.</i></p>
+              <p class="pub-title">Align Your Rhythm: Generating Highly Aligned Dance Poses with Gating-Enhanced Rhythm-Aware Feature Representation.</p>
+              <p class="venue">In <i>IEEE/CVF International Conference on Computer Vision (ICCV), 2025.</i></p>
+              <p class="links">[<a href="https://arxiv.org/abs/2503.17340">arXiv</a>] [<a href="https://danceba.github.io/">Demo</a>] [<a href="https://github.com/fancongyi/Danceba">Code</a>]</p>
+            </li>
+
+            <li>
+              <p class="authors"><i>Xuanjia Zhao, Jian Guan, <span class="me">Congyi Fan</span>, Dongli Xu, Youtian Lin, Haiwei Pan, Pengming Feng.</i></p>
+              <p class="pub-title">FastDrag: Manipulate Anything in One Step.</p>
+              <p class="venue">In <i>Annual Conference on Neural Information Processing Systems (NeurIPS), 2024.</i></p>
+              <p class="links">[<a href="https://arxiv.org/abs/2405.15769">arXiv</a>] [<a href="https://fastdrag-site.github.io/">Demo</a>] [<a href="https://github.com/XuanjiaZ/FastDrag">Code</a>]</p>
+            </li>
+
+            <li>
+              <p class="authors"><i><span class="me">Congyi Fan*</span>, Shitong Fan*, Feiyang Xiao, Wenbo Wang, Xinyi Che, Qiaoxi Zhu, Jian Guan.</i></p>
+              <p class="pub-title">GISP@HEU's Submission to the DCASE 2025 Challenge: Stereo SELD Task.</p>
+              <p class="venue">In <i>DCASE 2025 Technical Report.</i></p>
+              <p class="links">[<a href="https://dcase.community/documents/challenge2025/technical_reports/DCASE2025_Guan_77_t3.pdf">Paper</a>]</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Experiences</h3>
+          <p><strong>Research Intern</strong>, Guangdong Key Laboratory of New Security and Intelligence Technology, HITSZ, 2024.07–2024.11</p>
+          <ul>
+            <li><p>Led by <a href="https://faculty.hitsz.edu.cn/wangxuan">Xuan Wang</a> and supervised by <a href="http://csen.hitsz.edu.cn/info/1021/1962.htm">Shuhan Qi</a>.</p></li>
+          </ul>
+          <p><strong>Research Intern</strong>, State Key Laboratory of Space-Ground Integrated Information Technology (SGIIT), National Key Laboratory, 2025.06–Now</p>
+          <ul>
+            <li><p>Supervised by <a href="https://scholar.google.com/citations?user=O51mMKgAAAAJ">Pengming Feng</a> and <a href="https://scholar.google.com/citations?user=wf60G1sAAAAJ">Jian Guan</a>.</p></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Academic Service</h3>
+          <p><strong>Conference Reviewer / TPC Member</strong></p>
+          <ul>
+            <li><p>IEEE International Conference on Multimedia &amp; Expo (ICME) 2024, 2025</p></li>
+            <li><p>Chinese Conference on Pattern Recognition and Computer Vision (PRCV) 2025</p></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Competitions</h3>
+          <ul>
+            <li><p>Ranked 7th globally in Task 1 and 4th globally in Task 2 of the EEG-Music Emotion Recognition challenge at ICASSP 2024 Grand Challenge, 2024.01.</p></li>
+            <li><p>1st in 9th National Youth Artificial Intelligence Innovation and Entrepreneurship Conference, 2024.12.</p></li>
+            <li><p>3rd in Northeast Region National Undergraduate Information Security Competition, 2024.07.</p></li>
+            <li><p>Honorable Mention in American Undergraduate Mathematical Contest in Modeling, 2024.05.</p></li>
+            <li><p>Heilongjiang Province 1st in National Undergraduate Mathematical Contest in Modeling, 2023.11.</p></li>
+          </ul>
+          <p class="muted">(Total of 2 national awards and 7 provincial awards)</p>
+        </div>
+
+        <div class="section" style="text-align:center; margin-top: 28px;">
+          <a href="https://clustrmaps.com/site/1bonu" title="Visit tracker"><img src="https://clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=6yrMMIqIUJ1GT9nydxBO8cdtx5nw8iVTjA_d5hAcBcY&amp;co=2d78ad&amp;ct=ffffff" alt="Visitor map" /></a>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+<!--
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -389,3 +694,5 @@ in <i>Dcase 2025 Technical Report.</i> [<a href="https://dcase.community/documen
 </table>
 </body>
 </html>
+
+-->
