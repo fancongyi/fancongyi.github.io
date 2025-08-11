@@ -119,8 +119,10 @@
     .authors i { font-style: normal; }
     .me { font-weight: 800; color: var(--primary); }
     .venue { font-style: italic; }
-    /* Remove extra space after link text inside [brackets] */
-    /* (We intentionally do not add margins to .links a to avoid a gap before ']' ) */
+    /* Place venue and links on the same line */
+    .pubs .venue { display: inline; }
+    .pubs .links { display: inline; margin-left: .5em; margin-right: 0; }
+    /* Keep bracket groups tight; don't add extra spacing inside [] */
 
     /* Publications scroller: only scroll when > 8 items */
     .pubs-container { margin: 14px 0; padding: 8px 14px; border: 1px solid var(--border); border-radius: 12px; background: #fbfbfd; max-height: none; overflow: visible; }
@@ -246,6 +248,7 @@
           <h2>Research</h2>
           <!-- <h3>Selected Publications</h3> -->
           <p>Thanks to all the collaborators for their great work! Check out <strong><a href="https://scholar.google.com/citations?user=bBNwgX8AAAAJ">Google Scholar</a></strong> for more.</p>
+          <p>"✉": Corresponding author. "🞶": Equal contribution. </p>
 
           <div class="pubs-container">
             <ul class="pubs">
@@ -275,13 +278,13 @@
 
         <div class="section">
           <h2>Experiences</h2>
-          <p><strong>Research Intern</strong>, Guangdong Key Laboratory of New Security and Intelligence Technology, HITSZ, 2024.07–2024.11</p>
-          <ul>
-            <li><p>Led by <a href="https://faculty.hitsz.edu.cn/wangxuan">Xuan Wang</a> and supervised by <a href="http://csen.hitsz.edu.cn/info/1021/1962.htm">Shuhan Qi</a>.</p></li>
-          </ul>
           <p><strong>Research Intern</strong>, State Key Laboratory of Space-Ground Integrated Information Technology (SGIIT), National Key Laboratory, 2025.06–Now</p>
           <ul>
             <li><p>Supervised by <a href="https://scholar.google.com/citations?user=O51mMKgAAAAJ">Pengming Feng</a> and <a href="https://scholar.google.com/citations?user=wf60G1sAAAAJ">Jian Guan</a>.</p></li>
+          </ul>
+          <p><strong>Research Intern</strong>, Guangdong Key Laboratory of New Security and Intelligence Technology, HITSZ, 2024.07–2024.11</p>
+          <ul>
+            <li><p>Led by <a href="https://faculty.hitsz.edu.cn/wangxuan">Xuan Wang</a> and supervised by <a href="http://csen.hitsz.edu.cn/info/1021/1962.htm">Shuhan Qi</a>.</p></li>
           </ul>
         </div>
 
@@ -306,9 +309,9 @@
           <p class="muted">(Total of 2 national awards and 7 provincial awards)</p>
         </div>
 
-        <div class="section" style="text-align:center; margin-top: 28px;">
+        <!-- <div class="section" style="text-align:center; margin-top: 28px;">
           <a href="https://clustrmaps.com/site/1bonu" title="Visit tracker"><img src="https://clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=6yrMMIqIUJ1GT9nydxBO8cdtx5nw8iVTjA_d5hAcBcY&amp;co=2d78ad&amp;ct=ffffff" alt="Visitor map" /></a>
-        </div>
+        </div> -->
       </td>
     </tr>
   </table>
