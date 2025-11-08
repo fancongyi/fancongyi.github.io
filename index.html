@@ -125,9 +125,8 @@
     .pubs .links { display: inline; margin-left: .5em; margin-right: 0; }
     /* Keep bracket groups tight; don't add extra spacing inside [] */
 
-    /* Publications scroller: only scroll when > 8 items */
     .pubs-container { margin: 14px 0; padding: 8px 14px; border: 1px solid var(--border); border-radius: 12px; background: #fbfbfd; max-height: none; overflow: visible; }
-    .pubs-container:has(.pubs li:nth-of-type(9)) { max-height: 360px; overflow-y: auto; }
+    .pubs-container:has(.pubs li:nth-of-type(20)) { max-height: 360px; overflow-y: auto; }   /* Publications scroller: only scroll when > 20 items */
     .pubs-container::-webkit-scrollbar { width: 6px; }
     .pubs-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 3px; }
     .pubs-container::-webkit-scrollbar-thumb { background: #888; border-radius: 3px; }
